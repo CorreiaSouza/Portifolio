@@ -347,16 +347,7 @@
         display: none;
     }
 
-    .menu.desktop{
-      display: block;
-      position: absolute;
-      width: 100%;
-      top: 70px;
-      right: 0px;
-      background: black;
-      height: calc(100vh - 70px)
-
-    }
+    
 
     .menu.desktop.active {
         display: flex;
