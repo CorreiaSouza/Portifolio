@@ -334,10 +334,33 @@
 
  /*Estilização mobile*/
 
- .menu mobile{
-  background-color: #0000008c;
-  position: absolute;
-  top: 0;
-  left: 0;
- }
-  
+ #btn-mobile {
+    display: none;
+}
+
+@media (max-width: 1070px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    .menu.desktop {
+        display: none;
+    }
+
+    .menu.desktop{
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: black;
+      height: calc(100vh - 70px)
+
+    }
+
+    .menu.desktop.active {
+        display: flex;
+    }
+}
+
+ 

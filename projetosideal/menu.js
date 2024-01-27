@@ -1,19 +1,8 @@
-let btnMenu = document.getElementById('btn-menu'); // Corrigido para 'btn-menu'
-let menu = document.getElementById('menu-mobile');
-let overlay = document.getElementById('overlay-menu'); 
+const btnMobile = document.getElementById("btn-mobile");
+const menuDesktop = document.querySelector(".menu.desktop");
 
-btnMenu.addEventListener('click', () => {
-    menu.classList.add('abrir-menu');
-});
+function toggleMenu() {
+    menuDesktop.classList.toggle('active');
+}
 
-
-menu.addEventListener('click', () => {
-    menu.classList.remove('abrir-menu');
-});
-
-
-overlay.addEventListener('click', () => {
-    menu.classList.remove('abrir-menu');
-});
-
-
+btnMobile.addEventListener('click', toggleMenu);
