@@ -333,25 +333,3 @@
   }
 
  /*Estilização mobile*/
-
- #btn-mobile {
-    display: none;
-}
-
-@media (max-width: 1070px) {
-    #btn-mobile {
-        display: block;
-    }
-
-    .menu.desktop {
-        display: none;
-    }
-
-    
-
-    .menu.desktop.active {
-        display: flex;
-    }
-}
-
- 
