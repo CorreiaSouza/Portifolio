@@ -10,7 +10,7 @@ function toggleMenu() {
 
 
 function animarMenu(){
-    const btn = document.getElementById('btn-menu')
-    btn.classList.toggle('ativar')
+    const btn = document.getElementById('btn-menu');
+    btn.classList.toggle('ativar');
 }
 
